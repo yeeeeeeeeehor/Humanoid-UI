@@ -1,124 +1,123 @@
-# Introduction
+# Введение
 
-**PROD-READY Candy Machine Responsive UI** which can be easily customized in 5mn.
+**Готовая для сборки Candy Machine UI отзывчивый пользовательский интерфейс, который можно легко настроить за 5млн.**
 
-**UP-TO-DATE with latest Metaplex improvements**
+**Актуальный с последними улучшениями Metaplex**
 
-All Candy Machine V2 functionalities are implemented, auto detected and maintained up-to-date :
+Все функциональные возможности Candy Machine V2 реализованы, автоматически определяются и поддерживаются в актуальном состоянии:
 
-- public mint (with countdown when date in future)
-- civic support (gatekeeper)
-- whitelist
-- presale true/false
-- end date / end number (endSettings)
-- spl-token to mint
-- latest MCC updates from Metaplex
+ - Публичный монетный двор (с обратным отсчетом, когда дата в будущем)
+ - Поддержка Civic
+ - Белый список
+ - Предпродажа
+ - Дата конца / Номер окончания (endSettings)
+ - SPL-токен для монетного двора
+ - последнее обновление MCC от Metaplex от 01.06.2022
 
-![Candy Machine Preview Image](https://i.ibb.co/yPrdrrF/cmv2.png)
+![Candy Machine Preview Image](https://ibb.co/wrk92z6)
 
-### Supported Wallets
+### Поддерживаемые кошельки
 
 ![Supported Wallets](https://i.ibb.co/DC6Wt66/wallets.png)
 
-For instructions on how to set up a V2 candy machine, please refer to Metaplex's documentation [here](https://docs.metaplex.com/candy-machine-v2/Introduction)
+Инструкции по настройке Candy Machine V2 см. в документации Metaplex [here](https://docs.metaplex.com/candy-machine-v2/Introduction)
 
-## One-Click Vercel Deployment
+## Сборка Vercel в один клик 
 
-One-click solution to clone this project to your GitHub and deploy the prod package on a Vercel.
-Your only task will be to customize your GitHub fork of this project and commit updates.
-Vercel will automatically deploy new prod packages for each new commit.
+Это решение позволяет одним щелчком мыши клонировать данный проект на GitHub и развернуть prod-пакет на Vercel.
+Вашей единственной задачей будет настройка вашего форка этого проекта на GitHub и фиксация обновлений.
+Vercel будет автоматически развертывать новые prod-пакеты для каждого нового коммита.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FFulgurus%2Fcandy-machine-v2-responsive-ui&env=REACT_APP_CANDY_MACHINE_ID,REACT_APP_SOLANA_NETWORK,REACT_APP_SOLANA_RPC_HOST&envDescription=Populate%20REACT_APP_CANDY_MACHINE_ID%20with%20your%20candy%20machine%20public%20key%2C%20REACT_APP_SOLANA_NETWORK%20with%20the%20solana%20network%20(devnet%2Fmainnet-beta)%20and%20REACT_APP_SOLANA_RPC_HOST%20with%20the%20RPC%20URL%20(example%20for%20devnet%20%3A%20https%3A%2F%2Fapi.devnet.solana.com)&envLink=https%3A%2F%2Fdocs.solana.com%2Fcluster%2Frpc-endpoints%23mainnet-beta&demo-title=My%20Demo%20Mint%20Page&demo-description=A%20one-click%20generated%20solana%20minting%20responsive%20website.&demo-url=https%3A%2F%2Fwww.mintgatsbyclub.net%2F&demo-image=https%3A%2F%2Fi.ibb.co%2FyPrdrrF%2Fcmv2.png)
 
-## To thank me with a small SOL tip :]
+## Подготовка к работе
 
-`58SevvhmaN4SfCop2HkepAWyM5zykr7Afiv91PAAfPqR`
+### Предварительные условия
 
-## Getting Set Up
+**Необходим NODEJS Версии <= 16 (версия 17 не поддерживается)**.
 
-### Prerequisites
+* Загрузите редактор кода, например Visual Studio Code.
 
-**REQUIRE NODEJS VERSION <= 16 (version 17 not supported)**.
-
-* Download a Code Editor such as Visual Studio Code.
-
-* Ensure you have both `nodejs` and `yarn` installed. `nodejs` recommended version is 16.
+* Убедитесь, что у вас установлены `nodejs` и `yarn`. Рекомендуемая версия `nodejs` - 16.
 
 * Follow the instructions [here](https://docs.solana.com/cli/install-solana-cli-tools) to install the Solana Command Line Toolkit.
 
-* Follow the instructions [here](https://hackmd.io/@levicook/HJcDneEWF) to install the Metaplex Command Line Utility.
-  * Installing the Command Line Package is currently an advanced task that will be simplified eventually.
+* Следуйте инструкциям [here](https://hackmd.io/@levicook/HJcDneEWF) Для установки набора инструментов командной строки Solana.
 
-### Installation
+* Установка пакета командной строки в настоящее время является сложной задачей, которая со временем будет упрощена.
 
-#### 1. Fork the project & clone it. Example:
+### Установка
+
+#### 1. Сделайте Форк данного репозитория и клонируйте его. Пример:
 
 ```
-git clone https://github.com/Fulgurus/candy-machine-v2-responsive-ui.git
+git clone https://github.com/yeeeeeeeeehor/Humanoid-UI.git
 ```
 
-#### 2. Define your environment variables (.env file)
+#### 2. Определите переменные окружения (.env файл)
 
-Rename the `.env.example` file at the root directory to `.env` and update the following variables in the `.env` file:
+Переименуйте этот `.env.example` file в главной директории в `.env` и обновите следующие переменные в `.env` файле:
 
 ```
 REACT_APP_CANDY_MACHINE_ID=__PLACEHOLDER__
 ```
-set __PLACEHOLDER__ with the candy machine pubkey you get once you upload & create your candy machine in Metaplex project. You can find back the value from the `.cache/temp.json` file of your Metaplex project. This file is created when you run the `ts-node candy-machine-v2-cli.ts upload ...` command.
-
+Установите __PLACEHOLDER__ в качестве публичного ключа вашей Candy Machine, который вы получите после загрузки и создания Candy Machine в проекте Metaplex. 
+Вы можете узнать это значение из файла `.cache/temp.json` вашего проекта Metaplex. 
+Этот файл создается при выполнении команды `ts-node candy-machine-v2-cli.ts upload ...`.
 ```
 REACT_APP_SOLANA_NETWORK=devnet
 ```
 
-This identifies the Solana network you want to connect to. Options are `devnet`, `testnet`, and `mainnet`.
+Определяет сеть Solana, к которой вы хотите подключиться. Варианты: `devnet`, `testnet` и `mainnet`.
 
 ```
 REACT_APP_SOLANA_RPC_HOST=https://api.devnet.solana.com
 ```
 
-This identifies the RPC server your web app will access the Solana network through.
+Этот параметр определяет RPC-сервер, через который ваше веб-приложение будет получать доступ к сети Solana.
 
 
-If you are using a custom SPL Token to MINT, you have two additional environment parameters to set :
+Если вы используете пользовательский SPL-токен для MINT, вам нужно установить два дополнительных параметра среды:
 
 
 ```
 REACT_APP_SPL_TOKEN_TO_MINT_NAME=
 ```
 
-Spl-token name to display next the price.
+Имя SPL-токена для отображения рядом с ценой.
 
 ```
 REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS=9
 ```
 
-Spl-token decimals were defined during its creation with --decimals parameter. If you didn't use that parameter, then by default your SPL Token got 9 decimals.
+Десятичные числа Spl-токена были определены при его создании с помощью параметра --decimals. 
+Если вы не использовали этот параметр, то по умолчанию ваш SPL-токен будет иметь 9 десятичных знаков.
 
-More info about it there : https://spl.solana.com/token
+Больше информации о SPL-токене вы можете найти тут : https://spl.solana.com/token
 
-#### 3. Build the project and test. Go to the root project directory and type the commands :
+#### 3. Сборка проекта и тестирование. Перейдите в корневой каталог проекта и введите команды :
 
-To install dependencies :
+Установка зависимостей :
 
 ```
 yarn install
 ```
 
-To test the app locally in the development mode (localhost:3000) :
+Чтобы протестировать приложение в локальном режиме разработки (localhost:3000) :
 
 ```
 yarn start
 ```
 
-To build the production package (generated in build folder of the project) :
+И собираем рабочий пакет (созданный в папке build проекта) :
 
 ```
 yarn build
 ```
 
-#### 4. Customize the website UI :
+#### 4. Настройка пользовательского интерфейса сайта UI :
 
-##### 4.1 `App.css` : update 5 main CSS variables with your custom colors :
+##### 4.1 `App.css` : обновите 5 основных переменных CSS с помощью ваших пользовательских цветов:
 
 ```
 :root {
@@ -130,38 +129,18 @@ yarn build
 }
 ```
 
-Next to that, make sure to update background image by overwriting your own background PNG file in src/img folder.
+Затем обновите фоновое изображение, перезаписав свой собственный фоновый PNG-файл в папке src/img.
 
 ##### 4.2 `public` folder :
 
-- Update existing demo cool cats images (cool-cats.gif, logo.png) with your owns images in project `public` folder. Make sure to name them identically.
-- Add your custom website title in `index.html` : `<title>Mint Page</title>`
+- Обновите существующие изображения демо-версии preview (preview.gif, logo.png) своими собственными изображениями в папке проекта `public`. Убедитесь, что они имеют одинаковые названия.
+- 
+- Добавьте ваш собственный заголовок сайта в `index.html` : `<title>Humanoid</title>`.
 
 ##### 4.3 `Home.tsx` :
 
-Scroll down down to line 380 (`return <main> [...]`) and start to update all titles/menu/text/images/text... as wished in the whole React HTML block.
+Прокрутите вниз до строки 703 (`return <main> [...]`) и начните обновлять все заголовки/меню/текст/изображения/текст... по желанию во всем блоке React HTML.
 
-That's it ! Enjoy your beautiful candy machine :)
+Вот и все! Наслаждайтесь вашей прекрасной конфетной машиной :)
 
 
-##  Available Commands Recap :
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-## Need Help ?
-
-You can ask for help in Stractors Discord : https://t.co/0VM0TkwiAn
