@@ -15,7 +15,6 @@
  - последнее обновление MCC от Metaplex от 01.06.2022
 
 <a href="https://ibb.co/wrk92z6"><img src="https://i.ibb.co/LhFLsZp/Screenshot-from-2022-06-01-19-38-15.png" alt="Screenshot-from-2022-06-01-19-38-15" border="0"></a>
-![Candy Machine Preview Image](https://ibb.co/wrk92z6)
 
 ### Поддерживаемые кошельки
 
