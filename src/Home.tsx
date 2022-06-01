@@ -709,11 +709,11 @@ const Home = (props: HomeProps) => {
                     <Menu>
                         <li><a href="#humanoid" rel="noopener noreferrer">HUMANOID</a>
                         </li>
-                        <li><a href="#link"
+                        <li><a href="https://magiceden.io/marketplace/humanoid"
                                 rel="noopener noreferrer">MAGIC EDEN</a></li>
-                        <li><a href="#link"
+                        <li><a href="https://coralcube.io/collection/humanoid"
                                 rel="noopener noreferrer">CORAL CUBE</a></li>
-                        <li><a href="#link"
+                        <li><a href="https://opensea.io/collection/humanoid"
                                 rel="noopener noreferrer">OPEN SEA</a></li>
                     </Menu>
                     <Wallet>
