@@ -711,9 +711,9 @@ const Home = (props: HomeProps) => {
                         </li>
                         <li><a href="https://magiceden.io/marketplace/humanoid"
                                 rel="noopener noreferrer">MAGIC EDEN</a></li>
-                        <li><a href="https://coralcube.io/collection/humanoid"
+                        <li><a href="https://coralcube.io/collection/27Z9ezr67ZtkTnLqAnqvLkdKB3Pukr2kCdjd15ujxQjF"
                                 rel="noopener noreferrer">CORAL CUBE</a></li>
-                        <li><a href="https://opensea.io/collection/humanoid"
+                        <li><a href="https://opensea.io/collection/humanoiddao"
                                 rel="noopener noreferrer">OPEN SEA</a></li>
                     </Menu>
                     <Wallet>
