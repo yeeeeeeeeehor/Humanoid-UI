@@ -40,9 +40,7 @@ Vercel будет автоматически развертывать новые
 
 * Убедитесь, что у вас установлены `nodejs` и `yarn`. Рекомендуемая версия `nodejs` - 16.
 
-* Follow the instructions [here](https://docs.solana.com/cli/install-solana-cli-tools) to install the Solana Command Line Toolkit.
-
-* Следуйте инструкциям [here](https://hackmd.io/@levicook/HJcDneEWF) Для установки набора инструментов командной строки Solana.
+* Следуйте инструкциям [here](https://docs.solana.com/cli/install-solana-cli-tools) Для установки набора инструментов командной строки Solana.
 
 * Установка пакета командной строки в настоящее время является сложной задачей, которая со временем будет упрощена.
 
