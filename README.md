@@ -1,3 +1,10 @@
+![](https://img.shields.io/github/languages/code-size/yeeeeeeeeehor/Humanoid-UI?style=for-the-badge)
+![](https://img.shields.io/github/downloads/yeeeeeeeeehor/Humanoid-Ui/total?style=for-the-badge)
+![](https://img.shields.io/github/v/release/yeeeeeeeeehor/Humanoid-Ui?style=for-the-badge)
+![](https://img.shields.io/github/release-date/yeeeeeeeeehor/Humanoid-Ui?style=for-the-badge)
+![](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+
 # Введение
 
 **Готовая для сборки Candy Machine UI отзывчивый пользовательский интерфейс, который можно легко настроить за 5 мин.**
